@@ -3,6 +3,10 @@ from mysql.connector import Error
 import requests
 import json
 from datetime import datetime
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def create_connection():
     """Cria uma conexão com o banco de dados."""
