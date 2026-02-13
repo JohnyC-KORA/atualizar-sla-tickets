@@ -44,8 +44,6 @@ def main():
         contador = 0
 
         for cod_fluxo in retorno:
-            # url = f"https://kora-api-gxb53d5kyq-rj.a.run.app/sla"
-            print(f"Atualizando SLA do ticket {cod_fluxo[0]}")
             url = f"{BACKEND_URL}/tickets/update/sla?cod_fluxo={cod_fluxo[0]}"
 
             payload = {}
